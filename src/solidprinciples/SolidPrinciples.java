@@ -5,6 +5,10 @@
  */
 package solidprinciples;
 
+import O.Addition;
+import O.Calculator;
+import O.CalculatorOperation;
+import O.Subtraction;
 import java.util.Scanner;
 import solidprinciples.S.TextManuplator;
 import solidprinciples.S.TextPrintable;
@@ -18,6 +22,9 @@ public class SolidPrinciples {
     
     public static void main(String[] args) {
         
+        /*
+        ///// this is Single Responsibility Principle /////
+        
         Scanner sc = new Scanner(System.in);
         
         TextManuplator texm = new TextManuplator(sc.next());
@@ -27,7 +34,18 @@ public class SolidPrinciples {
         print_it.printingText();
         
        // print_it.printDeletedWord("Mahmoud");
-       print_it.printReplacedWord("Bashir", "B4eer");
+       print_it.printReplacedWord("Bashir", "B4eer");*/
+        
+        /*
+        ///// this is Open-Closed Principle /////
+        
+        
+        CalculatorOperation operation = new Addition(50,70);
+        operation = new Subtraction(70,50);
+        Calculator.Calculate(operation);*/
+        
     }
+    
+   
     
 }
